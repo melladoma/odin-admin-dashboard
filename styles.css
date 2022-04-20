@@ -1,8 +1,13 @@
 body{
+    /* CSS global variables */
+    --primary-accent-color:deepskyblue;
+    --font-accent-color:white;
+    --font-base-color:rgb(0,0,0,0.8);
+
     margin:0;
     padding:0;
     font-size: 16px;
-    color:rgb(0, 0, 0,0.8);
+    color:var(--font-base-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* global grid layout */
@@ -16,11 +21,11 @@ main{
 /* sidebar layout (static grid)*/
 .sidebar{
     grid-area: sidebar;
-    background-color:deepskyblue;
-    color:white;
+    background-color:var(--primary-accent-color);
+    color:var(--font-accent-color);
     font-weight:600;
     display:grid;
-    grid-template-rows: 30px 180px 90px;
+    grid-template-rows: 30px 180px 90px; /* static grid*/
     align-content: start;
     gap:30px;
     padding:20px 40px 20px 20px;
@@ -32,7 +37,7 @@ main{
 
 .sidebar-menu{
     display:grid;
-    grid-template: repeat(auto-fit,30px)/20px 1fr;
+    grid-template: repeat(auto-fit,30px)/20px 1fr;/* static grid*/
     align-items: center;
     justify-items: center;
     gap:0 15px;
