@@ -10,8 +10,28 @@
 <body>
     <main>
         <div class="header">
-            <p>Header</p>
-            <img src="./resources/avatar.svg" alt="profile picture of user" class="user-pic">
+            <div class="top-header">
+                    <img src="./resources/icons/search.svg" alt="search icon" class="icon">
+                    <input type="search">
+                 <span></span>
+                    <img src="./resources/icons/bell.svg" alt="bell icon" class="icon">
+                    <img src="./resources/avatar.svg" alt="user profile picture" class="mini-user-pic">
+                    <p>Liz Bennet</p>
+            </div>
+            <div class="bottom-header">  
+                <div>
+                    <img src="./resources/avatar.svg" alt="profile picture of user" class="user-pic">
+                    <div class="welcome-msg">
+                        <p>Hi there,</p>
+                        <p>Liz Bennet (@liz)</p>
+                    </div>
+                </div>  
+                <div>
+                    <button><img src="./resources/icons/plus.svg" alt="icon plus" class="icon">New</button>
+                    <button><img src="./resources/icons/upload.svg" alt="icon upload" class="icon">Upload</button>
+                    <button><img src="./resources/icons/share.svg" alt="icon share" class="icon">Share</button>
+                </div> 
+            </div>    
         </div>
 
         <div class="sidebar">
@@ -20,17 +40,17 @@
                     <p>Dashboard</p>
             </div>
             <div class="sidebar-menu">
-                    <img src="./resources/icons/home.svg" alt="dashboard icon">
+                    <img src="./resources/icons/home.svg" alt="Home icon">
                     <p>Home</p>
-                    <img src="./resources/icons/user.svg" alt="dashboard icon">
+                    <img src="./resources/icons/user.svg" alt="profile icon">
                     <p>Profile</p>
-                    <img src="./resources/icons/message.svg" alt="dashboard icon">
+                    <img src="./resources/icons/message.svg" alt="messages icon">
                     <p>Messages</p>
-                    <img src="./resources/icons/history.svg" alt="dashboard icon">
+                    <img src="./resources/icons/history.svg" alt="history icon">
                     <p>History</p>
-                    <img src="./resources/icons/tasks.svg" alt="dashboard icon">
+                    <img src="./resources/icons/tasks.svg" alt="tasks icon">
                     <p>Tasks</p>
-                    <img src="./resources/icons/group.svg" alt="dashboard icon">
+                    <img src="./resources/icons/group.svg" alt="communities icon">
                     <p>Communities</p>
             </div>
             <div class="sidebar-menu">
@@ -44,7 +64,126 @@
         </div>
 
         <div class="main-content">
-            <p>Your projects</p>
+
+            <div class="projects-container">
+                <p>Your projects</p>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="text">
+                            <p>Super Cool Project</p>
+                            <p>This project lead by @Liz enables our community to dramatically enrich their experience.</p>
+                        </div>
+                        <div class="controls">
+                            <img src="./resources/icons/star.svg" alt="favorite icon">
+                            <img src="./resources/icons/expand.svg" alt="expand icon">
+                            <img src="./resources/icons/calendar.svg" alt="calendar icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <p>Quite Cool Project</p>
+                            <p>This project is lead by @Holden for our staff team to optimize client request handling.</p>
+                        </div>
+                        <div class="controls">
+                            <img src="./resources/icons/star.svg" alt="favorite icon">
+                            <img src="./resources/icons/expand.svg" alt="expand icon">
+                            <img src="./resources/icons/calendar.svg" alt="calendar icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <p>Impossible App</p>
+                            <p>This app is due yesterday and will haunt our team for the next two years.</p>
+                        </div>
+                        <div class="controls">
+                            <img src="./resources/icons/star.svg" alt="favorite icon">
+                            <img src="./resources/icons/expand.svg" alt="expand icon">
+                            <img src="./resources/icons/calendar.svg" alt="calendar icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <p>Easy Peasy App</p>
+                            <p>This app is a real walk in the park, we want to do this all day every day.</p>
+                        </div>
+                        <div class="controls">
+                            <img src="./resources/icons/star.svg" alt="favorite icon">
+                            <img src="./resources/icons/expand.svg" alt="expand icon">
+                            <img src="./resources/icons/calendar.svg" alt="calendar icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <p>Mini Game</p>
+                            <p>This is an event game and we don't really know what we're doing but we will do it.</p>
+                        </div>
+                        <div class="controls">
+                            <img src="./resources/icons/star.svg" alt="favorite icon">
+                            <img src="./resources/icons/expand.svg" alt="expand icon">
+                            <img src="./resources/icons/calendar.svg" alt="calendar icon">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <p>Money Maker</p>
+                            <p>Because, you know.</p>
+                        </div>
+                        <div class="controls">
+                            <img src="./resources/icons/star.svg" alt="favorite icon">
+                            <img src="./resources/icons/expand.svg" alt="expand icon">
+                            <img src="./resources/icons/calendar.svg" alt="calendar icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="announcements-container">
+                <p>Announcements</p>
+                <div class="container">
+                    <div class="article">
+                        <p>Controls Module update and name change</p>
+                        <p>We've updated the Controls Module and renamed it Privacy as we've had feedback that the module name was confusing.</p>
+                    </div>
+                    <hr>
+                    <div class="article">
+                        <p>Scheduled Site Maintenance</p>
+                        <p>Hotfixes needed! Please note that site maintenance will be performed every first wednesday of the month. </p>
+                    </div>
+                    <hr>
+                    <div class="article">
+                        <p>Updated Privacy Policy</p>
+                        <p>We are making updates on our privacy policy, we recommend you fully review the new Privacy Policy.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="trending-container">
+                <p>Trending</p>
+                <div class="container trending-users">
+                    <img src="./resources/avatar3.svg" alt="user icon" class="mini-user-pic">
+                    <div class="user-info">
+                        <p>@jay</p>
+                        <p>Ad blocker</p>
+                    </div>
+                    <img src="./resources/avatar.svg" alt="user icon" class="mini-user-pic">
+                    <div class="user-info">
+                        <p>@liz</p>
+                        <p>Super cool project</p>
+                    </div>
+                    <img src="./resources/avatar2.svg" alt="user icon" class="mini-user-pic">
+                    <div class="user-info">
+                        <p>@holden</p>
+                        <p>Quite cool project</p>
+                    </div>
+                    <img src="./resources/avatar1.svg" alt="user icon" class="mini-user-pic">
+                    <div class="user-info">
+                        <p>@lyra</p>
+                        <p>Life Changing app</p>
+                    </div>
+                 </div>
+            </div>
+            
         </div>
     </main>
 
